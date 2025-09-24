@@ -1,8 +1,8 @@
 import { JSX } from "react"
 
-const Greeter: React.FC = (): JSX.Element => {
+const Greeter = (props: { person: string }): JSX.Element => {
   return (
-    <h1>안녕하세요?...</h1>
+    <h1>안녕하세요? {props.person}</h1>
   )
 }
 
