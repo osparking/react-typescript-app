@@ -2,9 +2,19 @@ import './App.css';
 import ShoppingList from './component/ShoppingList';
 
 function App() {
+  const items = [{
+    id: 1,
+    product: "수수",
+    quantity: 500
+  }, {
+    id: 2,
+    product: "발가락 양말",
+    quantity: 2
+  }];
+
   return (
     <div>
-      <ShoppingList />
+      <ShoppingList items={items}/>
     </div>
   );
 }
