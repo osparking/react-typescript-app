@@ -1,8 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-const calculate = <T,>(param: T) : T => {
+const calculate = <T,>(param: T): T => {
   return param;
 }
 
