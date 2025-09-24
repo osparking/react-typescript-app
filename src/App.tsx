@@ -1,12 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import ShoppingList from './component/ShoppingList';
-
-interface ShopItem {
-  id: number;
-  product: string;
-  quantity: number;
-}
+import ShopItem from './models/ShopItem';
 
 function App() {
   const [items, setItems] = useState<ShopItem[]>([]);
