@@ -1,15 +1,14 @@
 import { JSX } from "react";
 
-const ShoppingList = (): JSX.Element => {
-  const items = [{
-    id: 1,
-    product: "수수",
-    quantity: 500
-  }, {
-    id: 2,
-    product: "발가락 양말",
-    quantity: 2
-  }];
+interface ShopItem {
+  id: number;
+  product: string;
+  quantity: number;
+}
+
+interface ListParam {
+  items: ShopItem[];
+}
 
   return (
     <div>
