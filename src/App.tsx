@@ -8,6 +8,8 @@ const calculate = <T,>(param: T): T => {
 function App() {
   return (
     <div className="App">
+      <Greeter person="길동"/>
+      <Greeter />
       <Greeter />
     </div>
   );
