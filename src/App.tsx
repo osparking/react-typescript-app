@@ -2,6 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const person : string = '홍길동';
+console.log("안녕하세요?", person);
+
 function App() {
   return (
     <div className="App">
