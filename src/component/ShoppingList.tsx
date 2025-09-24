@@ -1,10 +1,5 @@
 import { JSX } from "react";
-
-interface ShopItem {
-  id: number;
-  product: string;
-  quantity: number;
-}
+import ShopItem from "../models/ShopItem";
 
 interface ListParam {
   items: ShopItem[];
