@@ -1,6 +1,10 @@
 import { JSX } from "react"
 
-const Greeter = (props: { person: string }): JSX.Element => {
+interface GreetProp {
+  person: string;
+}
+
+const Greeter = (props: GreetProp): JSX.Element => {
   return (
     <h1>안녕하세요? {props.person}</h1>
   )
