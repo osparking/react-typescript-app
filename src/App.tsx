@@ -1,4 +1,5 @@
 import './App.css';
+import Greeter from './component/Greeter';
 
 const calculate = <T,>(param: T): T => {
   return param;
@@ -7,7 +8,7 @@ const calculate = <T,>(param: T): T => {
 function App() {
   return (
     <div className="App">
-      <h1>여러분 안녕?</h1>
+      <Greeter />
     </div>
   );
 }
