@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function calculate<T>(param: T) : T {
+const calculate = <T,>(param: T) : T => {
   return param;
 }
 
