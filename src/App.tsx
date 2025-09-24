@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <Greeter person="길동"/>
-      <Greeter />
-      <Greeter />
+      <Greeter person="이재"/>
+      <Greeter person="박은"/>
     </div>
   );
 }
