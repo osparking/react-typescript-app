@@ -3,12 +3,13 @@ import './App.css';
 import ShoppingList from './component/ShoppingList';
 import ShopItem from './models/ShopItem';
 import ItemEntryForm from './component/ItemEntryForm';
+import { v4 as getId } from 'uuid';
 
 function App() {
   const [items, setItems] = useState<ShopItem[]>([]);
 
   function addItem(item: string):void {
-    const itemObj = {id: 1, product: item, quantity: 1};
+    const itemObj = {id: getId(), product: item, quantity: 1};
     setItems([...items, itemObj]);
   }
 
