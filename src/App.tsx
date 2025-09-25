@@ -9,7 +9,7 @@ function App() {
   const [items, setItems] = useState<ShopItem[]>([]);
 
   function addItem(itemName: string):void {
-    const itemObj = {id: getId(), itemName: itemName, quantity: 1};
+    const itemObj = {id: getId(), itemName, quantity: 1};
     setItems([...items, itemObj]);
   }
 
