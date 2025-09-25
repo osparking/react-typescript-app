@@ -1,6 +1,6 @@
 
 export default interface ShopItem {
-  id: number;
+  id: string;
   product: string;
   quantity: number;
 }
