@@ -6,18 +6,10 @@ import ItemEntryForm from './component/ItemEntryForm';
 
 function App() {
   const [items, setItems] = useState<ShopItem[]>([]);
-  // const items = [{
-  //   id: 1,
-  //   product: "수수",
-  //   quantity: 500
-  // }, {
-  //   id: 2,
-  //   product: "발가락 양말",
-  //   quantity: 2
-  // }];
 
   function addItem(item: string):void {
-    console.log("추가될 항목: ", item);
+    const itemObj = {id: 1, product: item, quantity: 1};
+    setItems([...items, itemObj]);
   }
 
   return (
