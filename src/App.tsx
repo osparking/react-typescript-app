@@ -8,8 +8,8 @@ import { v4 as getId } from 'uuid';
 function App() {
   const [items, setItems] = useState<ShopItem[]>([]);
 
-  function addItem(item: string):void {
-    const itemObj = {id: getId(), product: item, quantity: 1};
+  function addItem(itemName: string):void {
+    const itemObj = {id: getId(), itemName: itemName, quantity: 1};
     setItems([...items, itemObj]);
   }
 
