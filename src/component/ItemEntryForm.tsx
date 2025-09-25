@@ -1,11 +1,12 @@
 import React, { JSX, useRef } from 'react'
 
-const ItemEntryForm = ():JSX.Element => {
+const ItemEntryForm = (): JSX.Element => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   function handleItemEntry(e: React.FormEvent) {
     e.preventDefault();
-    console.log("항목 입력됨");
+    console.log("항목 입력됨: ", inputRef.current?.value);
+
   }
 
   return (
