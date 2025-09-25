@@ -16,10 +16,14 @@ function App() {
   //   quantity: 2
   // }];
 
+  function addItem(item: string):void {
+    console.log("추가될 항목: ", item);
+  }
+
   return (
     <div>
-      <ShoppingList items={items}/>
       <ItemEntryForm />
+      <ShoppingList items={items} />
     </div>
   );
 }

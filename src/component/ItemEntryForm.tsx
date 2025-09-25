@@ -1,6 +1,10 @@
 import React, { JSX, useRef } from 'react'
 
 const ItemEntryForm = (): JSX.Element => {
+interface EntryFormProps {
+  addItem: (item: string) => void;
+}
+
   const inputRef = useRef<HTMLInputElement>(null);
 
   function handleItemEntry(e: React.FormEvent) {
