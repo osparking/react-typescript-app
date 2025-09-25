@@ -1,16 +1,16 @@
 import React, { JSX, useRef } from 'react'
 
-const ItemEntryForm = (): JSX.Element => {
 interface EntryFormProps {
   addItem: (item: string) => void;
 }
 
+const ItemEntryForm = ({addItem} : EntryFormProps): JSX.Element => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   function handleItemEntry(e: React.FormEvent) {
     e.preventDefault();
-    console.log("항목 입력됨: ", inputRef.current?.value);
-
+    addItem(inputRef.current!.value);
+    inputRef.current!.value = "";
   }
 
   return (

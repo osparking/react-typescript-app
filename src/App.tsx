@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div>
-      <ItemEntryForm />
       <ShoppingList items={items} />
+      <ItemEntryForm addItem={addItem} />
     </div>
   );
 }
